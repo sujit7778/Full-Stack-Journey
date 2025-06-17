@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <tit
+    le>Navigation Bar Variations</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: rgb(78, 78, 75);
+            color: aliceblue;
+        }
+        .nav-container{
+            margin-bottom: 40px;
+        }
+        h2{
+            margin-bottom: 10px;
+        }
+        .nav1{
+            background-color: #eaf2f2;
+            padding: 10px;
+        }
+        .nav1 ul{
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+             justify-content: space-around;
+        }
+        .nav1 li{
+            display:inline;
+        }
+        .nav1 a{
+            text-decoration: none;
+            color: #090202;
+            /* background-color: #d3620c; */
+            padding: 5px 15px;
+        }
+        .nav1 .login_btn {
+            background-color: rgb(11, 11, 142);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 5px;
+            cursor: crosshair;
+        }
+        .nav2{
+            background-color: #0f602a;
+            width: 200px;
+            padding: 20px;
+        }
+        .nav2 ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .nav2 li{
+            margin: 12px;
+        }
+        .nav2 a{
+            text-decoration: none;
+            color: aliceblue;
+            display: block;
+            padding: 10px;
+            width: 100px;
+        }
+        .nav2 a:hover{
+            background-color: #0fc71e;
+        }
+        .nav2 .login_btn{
+            background-color: #0fc71e;
+            color: rgb(247, 241, 241);
+            border: none;
+            width: 100%;
+            padding: 10px;
+            cursor:pointer;
+        }
+         .nav2 .login_btn:hover{
+            background-color:green;
+            border:1px solid white;
+         }
+         .nav3{
+            background-color: rgb(123, 159, 162);
+            padding: 10px;
+         }
+         .nav3 ul{
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            list-style-type: none;
+         }
+         .nav3 a{
+          text-decoration: none;
+          color: white;
+          padding: 10px;
+         display: block;
+         }
+         .nav3 .dropdown-content{
+            display: none;
+         }
+         .nav3 .dropdown:hover .dropdown-content{
+            display: block;
+            position: absolute;
+            background-color: gray;
+            min-width: 150px;
+         }
+         .nav3 a:hover{
+            background-color: #f06666;
+         }
+         .nav3 .login_btn{
+            background-color: rgb(22, 223, 82);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 5px;
+            cursor: crosshair;
+
+         }
+
+    </style>
+</head>
+<body>
+  <div class="Navigation containair">
+        <h2> Variations 1: Horizantal with underline effect</h2>
+        <nav class="nav1">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="Products">Products</a></li>
+                <li><button class="login_btn">Login</button></li>
+            </ul>
+        </nav>
+    </div>
+     <div class="Navigation containair">
+        <h2> Variations 2:Vertical with hover effect</h2>
+        <nav class="nav2">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="Products">Products</a></li>
+                <li><button class="login_btn">Login</button></li>
+            </ul>
+        </nav>
+     </div>
+      <div class="Navigation containair">
+        <h2> Variations 3:Horizantal with dropdown</h2>
+        <nav class="nav3">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li class="dropdown">
+                <a href="#">About</a>
+                <div class="dropdown-content">
+                  <a href="#">Our story</a>
+                  <a href="#">team</a>
+                  <a href="#">contact</a>
+                </div>
+                </li>
+                <li><a href="#">Products</a></li>
+                <li><button class="login_btn">Login</button></li>
+            </ul>
+        </nav>
+      </div>
+</body>
+</html>
